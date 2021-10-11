@@ -1,0 +1,22 @@
+/* li {
+    list-style: none;
+} */
+
+
+
+#todo-list{
+    padding: 0px;
+}
+
+.complete{
+    text-decoration: linethrough;
+    color: skyblue;
+}
+
+.delete{
+    float: right;
+}
+
+#new-list-item{
+    width: 200px;
+}
