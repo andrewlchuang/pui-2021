@@ -42,7 +42,7 @@ li a:hover {
     right: 0; 
     top: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
 }
 
 svg{
@@ -107,7 +107,7 @@ h2{
   .limited-ed{
     max-width:100px;
     position: absolute;
-    z-index: 0.5;
+    z-index: 1;
 }
 
 /*add to cart and buy now icon*/
