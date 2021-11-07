@@ -1,0 +1,353 @@
+/*navigation bar*/
+body {
+    background: #fff2e0;
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+}
+
+button {
+    font-family: 'DM Sans', sans-serif;
+    background: #E5CB88;
+    border: 0px;
+    cursor: pointer;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    float: right;
+}
+
+li a, .logo {
+    color: black;
+    display: block;
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+  }
+
+li a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+.navbar{
+    width: 100%;
+    border: 0;
+    background-color:#fce8b6;
+    right: 0; 
+    top: 0;
+    position: fixed;
+    z-index: 2;
+}
+
+svg{
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+
+/*styling seasonal item cover photo*/
+.cvr{
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: border-box;
+    border: 0px;
+}
+
+/*styling seasonal item block*/
+.caption{
+    position: absolute;
+    background-color: #f5e0ae;
+    left: 30px;
+    text-align: center;
+    width: 360px;
+    padding: 20px;
+}
+
+#sznl{
+    top: 250px;
+}
+
+h2{
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+}
+
+/* grid layout for featured products */
+/* applies to both home and products page */
+#prod-intro{
+    top: 300px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+  }
+
+.prod{
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10%;
+    margin-top: 5%;
+}
+
+/* images in grid */
+.rll{
+    max-width: 40%;
+    position:relative;
+}
+
+.limited-ed, #flvr{
+    max-width:100px;
+    position: absolute;
+    z-index: 1;
+}
+
+#flvr{
+    right: 13.5%;
+    top: 100px;
+}
+
+/*add to cart and buy now icon*/
+.add2cart{
+    margin-top: 0px;
+    width: 40%;
+    height: 46px;
+}
+
+.add2cart:hover{
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+.add2cart a {
+    text-decoration: none;
+    color: black;
+}
+
+.buy{
+    height: 30px;
+    background-color: white;
+    width: 30%;
+    font-weight: bold;
+}
+
+.buy:hover{
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+/* carousel prototype */
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    font-size: 18px;
+    top: 700px;
+}
+
+.prev{
+    left: 30px;
+}
+
+.next{
+    right: 30px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 8px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+.dot-list{
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+/* footer */
+.wrapper2 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+.copyright, .address {
+    text-align: center;
+    align-items: center;
+}
+
+footer {
+    width: 100%;
+    border: 0;
+    background-color:#fce8b6;
+}
+
+/* details page grid */
+.lft{
+    margin-left: 50px;
+}
+
+.rght{
+    align-items: center;
+    text-align: center;
+}
+
+.prod-img{
+    width: 35%;
+    margin-top: 20%;
+}
+
+.sbmt, .conf-sel{
+    align-items: center;
+    text-align: center;
+}
+
+.product-name{
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.25em;
+}
+
+.product-desc, .allergens, label, .progress{
+    font-size: 1.15em;
+}
+
+select{
+    background-color: #f5e0ae;
+    border-radius: 10px;
+    border: 0;
+    text-align: center;
+    width: 30%;
+    height: 1.15em;
+    margin: 5px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+}
+
+
+.add{
+    margin-top: 50px;
+    height: 46px;
+    border-radius: 10px;
+    width: 25%;
+    font-size: 1.15em;
+}
+
+.add:hover{
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+.price{
+    margin-top: 0px;
+}
+
+
+/* shopping cart */
+.itm-wrapper {
+    display: grid;
+    grid-template-columns: 33% 56% 10%;
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 20px 0px;
+    position:relative;
+  }
+
+.itm-rll{
+    max-width: 30%;
+    position: relative;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.itm-name{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.itm-glaze{
+    position: absolute;
+}
+
+.itm-quantity{
+    position: absolute;
+    bottom: 0;
+}
+
+.itm-price{
+    position: absolute;
+    bottom: 0;
+}
+
+#ttl-price{
+    right: 500px;
+}
+
+.price-wrapper{
+    display: grid;
+    grid-template-columns: 85.7% 14.3%;
+}
+
+/* citation: code from PUI lab 6, with modifications */
+
+.btn-remove-item {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    color:black;
+    background-color: #fcc4c0;
+    box-shadow: 2px 2px 5px rgb(167, 167, 167);
+    right: -8px;
+    top: -8px;
+    cursor: pointer;
+}
+
+.btn-remove-item:hover {
+    background-color: red;
+    color: white;
+}
+
+#sbmtbut{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.cntd{
+    text-align: center;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+#progshop{
+    text-decoration: none;
+}
+
+#progshop:hover{
+    text-decoration: underline;
+}
+
+.hidden-index{
+    display: none;
+}
+
+/*
+CITATIONS
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
+https://www.w3schools.com/css/css_navbar.asp
+*/

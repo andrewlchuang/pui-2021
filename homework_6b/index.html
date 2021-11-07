@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <title>Bun-Bun Bakeshop</title>
+        <!--meta information-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Bun-Bun Bakeshop Prototype">
+        <meta name="author" content="Andrew Chuang - 05430C">
+        <!--style sheet-->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!--fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Open+Sans:wght@600&family=Playfair+Display&display=swap" rel="stylesheet">
+        <!--javascript-->
+        <script defer src="main.js"></script>
+    </head>
+    <body onload="itemCount()">
+        <!--navigation bar-->
+        <!--citation: https://www.w3schools.com/css/css_navbar.asp-->
+        <nav class="navbar">
+            <a class="logo" href="index.html" style="float: left;">🥐 Bun-Bun</a>
+            <ul>
+                <!-- <li class="nav"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                    width="30" height="30"
+                    viewBox="0 0 172 172"
+                    style=" fill:#000000;"><g fill-rule="nonzero" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#000000"><path d="M31.64811,14.30534l-24.45345,0.12598l0.06999,14.33333l14.83724,-0.06999l23.61361,56.64746l-8.5804,13.71745c-6.00821,9.59438 1.29744,22.77376 12.61165,22.77376h86.41992v-14.33333h-86.41992c-0.79745,0 -0.8894,-0.15716 -0.46191,-0.83985l8.42643,-13.49349h53.52604c5.203,0 10.005,-2.8258 12.52767,-7.37663l25.8112,-46.48535c2.65883,-4.773 -0.79584,-10.63802 -6.25684,-10.63802h-105.69434zM50.16667,129c-7.91608,0 -14.33333,6.41725 -14.33333,14.33333c0,7.91608 6.41725,14.33333 14.33333,14.33333c7.91608,0 14.33333,-6.41725 14.33333,-14.33333c0,-7.91608 -6.41725,-14.33333 -14.33333,-14.33333zM121.83333,129c-7.91608,0 -14.33333,6.41725 -14.33333,14.33333c0,7.91608 6.41725,14.33333 14.33333,14.33333c7.91608,0 14.33333,-6.41725 14.33333,-14.33333c0,-7.91608 -6.41725,-14.33333 -14.33333,-14.33333z"></path></g></g></svg></li> -->
+                <li class="nav"><a href="cart.html">CART (<span id="item-num"></span>)</a></li>
+                <li class="nav"><a href="/">CONTACT</a></li>
+                <li class="nav"><a href="/">ABOUT</a></li>
+                <li class="nav"><a href="products.html">PRODUCTS</a></li>
+            </ul>
+        </nav>
+        <!--seasonal item-->
+        <img src="img/coversznl2.jpg" class="cvr" alt = "cover photo of cinnamon roll">
+        <div class = "caption" id="sznl">
+            <h2>CARAMEL PECAN</h2>
+            <p>Crunchy Georgia Pecans with smooth, silky caramel. Back at Bun Bun for a limited time. Get yours before it runs out!</p>
+            <button class="buy">BUY NOW</button>
+        </div>
+        <!--featured items-->
+        <h2 style="text-align: center;">FEATURED ITEMS</h2>
+        <div class="wrapper">
+            <!--leftmost item-->
+            <div class="prod">
+                <img src="img/roll1.jpg" class="rll" alt = "photo of original cinnamon roll">
+                <p class="prod-name">Original</p>
+                <button class = "add2cart" onclick="window.location.href='details.html';">Add to cart</button>
+            </div>
+            <!--middle item-->
+            <div class="prod" id="mid-item">
+                <img src="img/roll1.jpg" class="rll" alt = "photo of blackberry cinnamon roll">
+                <p class="prod-name">Blackberry</p>
+                <button class = "add2cart">Add to cart</button>
+            </div>
+            <!--rightmost item-->
+            <div class="prod">
+                <img src="img/roll1.jpg" class="rll" alt = "photo of walnut cinnamon roll">
+                <p class="prod-name">Walnut</p>
+                <button class = "add2cart">Add to cart</button>
+            </div>
+        </div>
+        <!--carousel-->
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+        <div class="dot-list">
+            <span class="dot" style="background-color: black;"></span>
+            <span class="dot" style= "background-color: #bbb;"></span>
+        </div>
+        <footer class="wrapper2">
+            <p class="copyright">contact@bunbun.com <br>
+                                Bun-Bun Bakery 2021</p>
+            <p class="address">125 Peach St. <br>
+                        Pittsburgh, PA 15222 <br> </p>
+        </footer>
+    </body>
+
+</html>
