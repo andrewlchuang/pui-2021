@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bun-Bun Bakeshop</title>
+        <!--meta information-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Bun-Bun Bakeshop Prototype">
+        <meta name="author" content="Andrew Chuang - 05430C">
+        <!--style sheet-->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!--fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Open+Sans:wght@600&family=Playfair+Display&display=swap" rel="stylesheet">
+        <!--javascript-->
+        <script defer src="main.js"></script>
+    </head>
+    <body>
+        <!--navigation bar-->
+        <!--citation: https://www.w3schools.com/css/css_navbar.asp-->
+        <nav class="navbar">
+            <a class="logo" href="index.html" style="float: left;">🥐 Bun-Bun</a>
+            <ul>
+            <!-- <li class="nav"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="30" height="30"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;"><g  fill-rule="nonzero" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"  style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z"></path><g fill="#000000"><path d="M31.64811,14.30534l-24.45345,0.12598l0.06999,14.33333l14.83724,-0.06999l23.61361,56.64746l-8.5804,13.71745c-6.00821,9.59438 1.29744,22.77376 12.61165,22.77376h86.41992v-14.33333h-86.41992c-0.79745,0 -0.8894,-0.15716 -0.46191,-0.83985l8.42643,-13.49349h53.52604c5.203,0 10.005,-2.8258 12.52767,-7.37663l25.8112,-46.48535c2.65883,-4.773 -0.79584,-10.63802 -6.25684,-10.63802h-105.69434zM50.16667,129c-7.91608,0 -14.33333,6.41725 -14.33333,14.33333c0,7.91608 6.41725,14.33333 14.33333,14.33333c7.91608,0 14.33333,-6.41725 14.33333,-14.33333c0,-7.91608 -6.41725,-14.33333 -14.33333,-14.33333zM121.83333,129c-7.91608,0 -14.33333,6.41725 -14.33333,14.33333c0,7.91608 6.41725,14.33333 14.33333,14.33333c7.91608,0 14.33333,-6.41725 14.33333,-14.33333c0,-7.91608 -6.41725,-14.33333 -14.33333,-14.33333z"></path></g></g></svg></li> -->
+                <li class="nav"><a href="cart.html" id="cart-nav">CART (<span id="item-num">0</span>)</a></li>
+                <li class="nav"><a href="/#">CONTACT</a></li>
+                <li class="nav"><a href="/#">ABOUT</a></li>
+                <li class="nav"><a href="products.html"><b>PRODUCTS</b></a></li>
+            </ul>
+        </nav>
+        <!--product details-->
+        <div class="wrapper2">
+            <!-- left column -->
+            <div class = "lft">
+                <p style="margin-top: 70px;" class = "progress"><a href="products.html">Products</a> > Original</p>
+                <p class = "product-name">Original</p>
+                <p class = "product-desc">Our original, bestselling cinnamon roll recipe made with only the finest ingredients 
+                    sourced directly from Europe. Our wheat is non-GMO and sourced directly from local family-owned farms. Each one is handmade, handrolled, made with love from our pastry chefs. Try one and we know you’ll come back for more!</p>
+                <p class = "allergens"><b>Allergens:</b> <i>Milk</i>, <i>eggs</i>, <i>wheat</i>, and <i>soy</i>. Made in a facility that processes <i>tree nuts</i>.</p>
+                <!--glaze-->
+                <label for="glaze">Choose a glaze:</label>
+                <select id="glaze" name="glaze" onchange="glazeConf(this.value)">
+                    <option value="vanilla-milk">Vanilla-milk</option>
+                    <option value="sugar-milk">Sugar-milk</option>
+                    <option value="double-chocolate">Double-chocolate</option>
+                    <option value="no">None</option>
+                </select><br>
+                <!--quantity-->
+                <label for="quant">Choose your quantity:</label>
+                <select id="quant" name="quant" onchange="quantDet(this.value)">
+                    <option value="1">1</option>
+                    <option value="3">3</option>
+                    <option value="6">6</option>
+                    <option value="12">12</option>
+                </select>
+            </div>
+            <!-- right column-->
+            <div class="rght">
+                <img class = "prod-img" src="img/roll1.jpg" alt = "photo of original cinnamon roll">
+                <div id = "indicator">
+                    <img src="img/vanilla-milk.png" id="flvr" alt = "vanilla milk flavor indicator">
+                </div>
+                <p class="price"><b>Price: </b><span id="total-price">$3.99</span></p>
+            </div> 
+        </div>
+        <!--submit button-->
+        <div class="sbmt" id="sbmt-orig">
+            <button class = "add">Add to cart</button>
+        </div>
+        <p class = "conf-sel">You have selected <span id="sel-quant">1</span> original cinnamon roll(s) with <span id="sel-glaze">vanilla-milk</span> glaze.</p>
+    </body>
+</html>
