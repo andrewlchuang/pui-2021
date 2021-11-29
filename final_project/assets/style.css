@@ -1,0 +1,58 @@
+/* container styling */
+.intr{
+    margin-left: .25%;
+	margin-right: .25%;
+    margin-top: 2%
+}
+
+/* cover photo styling */
+.cvphoto {
+    border: 0;
+    background-image: url("img/dinner-table.JPG");
+    min-height: 400px;
+    background-position: center;
+    background-size: cover;
+}
+
+/* food photo grid styling */
+.f-item{
+    list-style-type: none;
+    width: 33%;
+}
+
+
+@media (max-width: 800px) {
+    .f-item{
+        list-style-type: none;
+        width: 80%;
+    }
+}
+
+.food-row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+.food-groups{
+    text-align: center;
+    align-items: center;
+}
+
+.category{
+    display: inline-block;
+    list-style-type: none;
+
+}
+
+/* food photo styling */
+.food-photo{
+    max-width: 96%;
+    margin: 2%;
+}
+
+.food-photo:hover{
+    box-shadow: 5px 5px 3px 0 rgba(0,0,0,0.2);
+    transform: scale(1.03);
+}

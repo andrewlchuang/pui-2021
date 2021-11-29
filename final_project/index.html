@@ -1,1 +1,83 @@
 <!DOCTYPE html>
+<head lang="en">
+    <title>Taste of Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Taste of Home - Foods I Miss">
+    <meta name="author" content="Andrew Chuang, 05430 Section C">
+    
+    <!-- bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"> </script>
+    
+    <!-- style sheet -->
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display|Poppins">
+
+    <!--javascript-->
+    <script defer src="assets/main.js"></script>
+</head>
+<body>
+    <!--where the cover image goes-->
+    <div class="container-fluid cvphoto">
+        <!-- alt text for cover photo -->
+        <span role="img" aria-label="image of dinner table used as cover photo for webpage"></span>
+    </div>
+    <!--main content woooo-->
+    <div class="container-fluid core-body">
+        <!-- introduction section -->
+        <div class="row intr">
+            <h1 id="hdr">Taste of Home</h1>
+            <p class="intro-blurb">Food is a connector of sorts. It builds bridges between people of the same, 
+                or different, backgrounds and unlocks memories of the past. As a student who is attending school
+                 a bit away (more than a thousand miles) from home, I frequently use food to relive childhood
+                  memories and to share a bit of who I am, where I came from, with those around me. In this
+                   project, I will share some foods that remind me of home :-) </p>
+            <p class="intro-blurb">Feel free to filter the recipes
+                along the following categories listed below!</p>
+            <!-- filter foods by type -->
+            <div class="food-groups">
+                <ul>
+                    <li class="category" onclick="displayAll()">All</li>
+                    <li class="category" onclick="displayVeg()">Vegetarian</li>
+                    <li class="category" onclick="displaySeafood()">Seafood</li>
+                </ul>
+            </div>
+        </div>
+        <!-- images of food -->
+        <ul class="row food-row">
+            <!-- clam soup -->
+            <li class="f-item seafood">
+                <img class="food-photo" src="assets/img/clam.jpg">
+            </li>
+            <!-- shrimp fried rice -->
+            <li class="f-item seafood">
+                <img class="food-photo" src="assets/img/fried-rice.JPG">
+            </li>
+            <!-- konbu broth -->
+            <li class="f-item vegetarian">
+                <img class="food-photo" src="assets/img/konbu.jpg">
+            </li>
+            <!-- yam leaves -->
+            <li class="f-item vegetarian">
+                <img class="food-photo" src="assets/img/yam-leaves.JPG">
+            </li>
+            <!-- rice rolls -->
+            <li class="f-item seafood">
+                <img class="food-photo" src="assets/img/rice-roll.jpg">
+            </li>
+            <!-- miso salmon -->
+            <li class="f-item seafood">
+                <img class="food-photo" src="assets/img/yam-leaves.JPG">
+            </li>
+
+        </ul>
+    </div>
+</body>
+</html>
