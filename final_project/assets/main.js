@@ -1,3 +1,12 @@
+// function that changes background colors of buttons back to transparent
+function revertColor(){
+    const options = document.getElementsByClassName("category");
+    for (var i = 0; i < options.length; i++){
+        options[i].style.background = "transparent";
+        options[i].style.fontWeight = "normal";
+    }
+}
+
 // function that displays all options
 function displayAll(){
     // retrieve the non-veg seafood options
@@ -5,6 +14,12 @@ function displayAll(){
     for (var i = 0; i < options.length; i++){
         options[i].style.display = "inline-block";
     }
+    // revert colors
+    revertColor();
+    // change color
+    const button = document.getElementById("all-but");
+    button.style.background = "#f7e2ba";
+    button.style.fontWeight = "bold";
 }
 
 // function that hides seafood options
@@ -16,6 +31,12 @@ function displayVeg(){
     for (var i = 0; i < options.length; i++){
         options[i].style.display = "none";
     }
+    // revert colors
+    revertColor();
+    // change color
+    const button = document.getElementById("veg-but");
+    button.style.background = "#f7e2ba";
+    button.style.fontWeight = "bold";
 }
 
 // function that hides veg options
@@ -27,4 +48,10 @@ function displaySeafood(){
     for (var i = 0; i < options.length; i++){
         options[i].style.display = "none";
     }
+    // revert colors
+    revertColor();
+    // change color
+    const button = document.getElementById("sfd-but");
+    button.style.background = "#f7e2ba";
+    button.style.fontWeight = "bold";
 }

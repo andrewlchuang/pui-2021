@@ -1,8 +1,37 @@
 /* container styling */
 .intr{
-    margin-left: .25%;
-	margin-right: .25%;
-    margin-top: 2%
+    margin-left: 2%;
+	margin-right: 2%;
+    margin-bottom: 2%;
+}
+
+/* header + intro blurb styling changes with screen size */
+@media (max-width: 700px) {
+    #hdr{
+        font-size: 60px;
+        font-family: 'Playfair Display', Georgia, serif;
+        text-align: center;
+    }
+
+    .intro-blurb{
+        font-size: 16px;
+        font-family: 'Open Sans', sans-serif;
+        text-align: center;
+    }
+}
+
+@media (min-width: 701px) {
+    #hdr{
+        font-size: 60px;
+        font-family: 'Playfair Display', Georgia, serif;
+        text-align: left;
+    }
+
+    .intro-blurb{
+        font-size: 16px;
+        font-family: 'Open Sans', sans-serif;
+        text-align: left;
+    }
 }
 
 /* cover photo styling */
@@ -20,12 +49,38 @@
     width: 33%;
 }
 
-
-@media (max-width: 800px) {
+/* filter selection changes with screen size */
+@media (max-width: 700px) {
     .f-item{
         list-style-type: none;
         width: 80%;
     }
+
+    .category{
+        display: block;
+        list-style-type: none;
+        width: 100px;
+        height: 30px;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin: 20px 20px;
+        padding: 3px;
+    }
+    
+}
+
+@media (min-width: 701px) {
+    .category{
+        display: inline-block;
+        list-style-type: none;
+        width: 100px;
+        height: 30px;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin: 0px 20px;
+        padding: 3px;
+    }
+    
 }
 
 .food-row{
@@ -38,18 +93,25 @@
 .food-groups{
     text-align: center;
     align-items: center;
+    vertical-align: center;
+    margin-top: 2%;
 }
 
-.category{
-    display: inline-block;
-    list-style-type: none;
 
+.category:hover{
+    cursor: pointer;
+}
+
+#all-but{
+    font-weight: bold;
+    background-color: #f7e2ba;
 }
 
 /* food photo styling */
 .food-photo{
     max-width: 96%;
     margin: 2%;
+    border-radius: 5px;
 }
 
 .food-photo:hover{
@@ -60,4 +122,21 @@
 /* modal boxes */
 .modal-photo{
     width: 100%;
+}
+
+/* item labeling */
+.item-label{
+    text-align: center;
+    font-weight: bold;
+}
+
+/* modal box styling */
+.background-story, .ingredients, .method, .tip{
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.modal-hdr{
+    text-align: center;
+    font-size: 20px;
 }
