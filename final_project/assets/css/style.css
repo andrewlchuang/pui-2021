@@ -37,7 +37,7 @@
 /* cover photo styling */
 .cvphoto {
     border: 0;
-    background-image: url("img/dinner-table.JPG");
+    background-image: url("../img/dinner-table.JPG");
     min-height: 400px;
     background-position: center;
     background-size: cover;
